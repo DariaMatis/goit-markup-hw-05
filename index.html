@@ -55,7 +55,21 @@
       <section class="main-section-content">
         <div class="container main-section-content">
           <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-          <button type="button">Request our service</button>
+          <button type="button" data-modal-open="#modal">
+            Request our service
+          </button>
+          <div class="modal-flex">
+            <div class="modal" id="modal" data-modal>
+              <button type="button" class="close-button" data-modal-close>
+                <svg>
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-close-button"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+            <div id="overlay"></div>
+          </div>
         </div>
       </section>
       <section>
@@ -123,25 +137,16 @@
             <img
               src="images/box_1.jpg"
               alt="working on 2 screens, typing on keyboard"
-              height="294"
-              width="370"
             />
+            <p>DESKTOP APPS</p>
           </li>
           <li>
-            <img
-              src="images/box_2.jpg"
-              alt="connecting phone with laptop"
-              height="294"
-              width="370"
-            />
+            <img src="images/box_2.jpg" alt="connecting phone with laptop" />
+            <p>Mobile APPS</p>
           </li>
           <li>
-            <img
-              src="images/box_3.jpg"
-              alt="working on ipad"
-              height="294"
-              width="370"
-            />
+            <img src="images/box_3.jpg" alt="working on ipad" />
+            <p>DESIGN SOLUTIONS</p>
           </li>
         </ul>
       </section>
@@ -389,13 +394,12 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="container">
-        <div class="footer-section">
-          <a href="index.html" class="logo"><span>Web</span>Studio</a>
-          <address class="mail-phone">
-            <a href="695 Park Ave, NY 10065, USA"
-              >695 Park Ave, NY 10065, USA</a
-            >
+        <section class="container">
+          <div class="footer-section">
+            <a href="index.html" class="logo"><span>Web</span>Studio</a>
+            <address class="mail-phone">
+              <a href="695 Park Ave, NY 10065, USA"
+                >695 Park Ave, NY 10065, USA</a>
             <a href="email:info@devstudio.com">info@devstudio.com</a>
             <a href="+1-212-772-4150">+1 212-772-4150</a>
           </address>
